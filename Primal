@@ -1,0 +1,19 @@
+public class Primal {
+    public static void main(String[] args) {
+        int x = 0, y = 0;
+        String prime = " ";
+
+        for (x = 1; x <= 100; x++) {
+            int frrik = 0;
+            for (y = x; y >= 1; y--) {
+                if (x % y == 0) {
+                    frrik = frrik + 1;
+                }
+            }
+            if (frrik == 2) {
+                prime = prime + x + " ";
+            }
+        }
+        System.out.println(prime);
+    }
+}
